@@ -14,19 +14,19 @@
 		</form>
         <div id="grad2" style="text-align:center;margin:auto;font-size:35px;font-weight:bold"></div>
         <h2 style="text-align:center;margin:auto;font-size:17px"> Top relevant results </h2>
-        <div style="margin: bottom 150px;">
+        <div style="text-align:center">
 	    {% for key, value in result.items() %}
             <h3> {{value['video']}} </h3>
-            <h3> Time: From {{value['stime']}} to {{value['etime']}} </h3>
+            <h4> Time: From {{value['stime']}} to {{value['etime']}} </h3>
         {% endfor %}
         </div>
 	</body>
     <footer>
         <br>
         <h2 style="text-align:center;margin:auto;font-size:13px">Authors</h2>
-        <h3 style="text-align:center;margin:auto;font-size:13px">Nguyen Truong Vinh Thuyen</h2>
+        <h2 style="text-align:center;margin:auto;font-size:13px">Nguyen Truong Vinh Thuyen</h2>
         <h2 style="text-align:center;margin:auto;font-size:13px">Tran Duc Huy</h2>
-        <h3 style="text-align:center;margin:auto;font-size:13px">Dao Thi Phuong Thao</h2>
+        <h2 style="text-align:center;margin:auto;font-size:13px">Dao Thi Phuong Thao</h2>
     </footer>
     
 </html> 

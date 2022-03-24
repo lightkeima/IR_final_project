@@ -14,7 +14,7 @@ footer {
   width: 100%;
   /* Height of the footer*/ 
   height: 120px;
-  background: rgba(41, 163, 235,0.5);
+  background: rgba(41, 163, 235, 1);
 }
 h1 {
   font-family: 'Pacifico', cursive;
