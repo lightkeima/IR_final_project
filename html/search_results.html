@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+		<title>Video moment search enginewith CLIP</title>
+	</head>
+	<body>
+		<div id="grad1" style="text-align:center;margin:auto;font-size:35px;font-weight:bold"></div>
+		<h1 style="margin:auto;font-size:21px;">Vimo Seach</h1>
+		<h2 style="margin:auto;font-size:15px;"> CLIP-based Video Moment Search Engine </h2>	
+		<form method="POST" style="margin: 2%">
+    			<input id ="restextbox" name="Query">
+    			<input id ="ressubmitbtn" type="submit" value="Search">
+		</form>
+        <div id="grad2" style="text-align:center;margin:auto;font-size:35px;font-weight:bold"></div>
+        <h2 style="text-align:center;margin:auto;font-size:17px"> Top relevant results </h2>
+
+	    {% for key, value in result.items() %}
+            <h3> {{value['video']}} </h3>
+            <h3> Time: From {{value['stime']}} to {{value['etime']}} </h3>
+        {% endfor %}
+	</body>
+    <footer>
+        <br>
+        <h2 style="text-align:center;margin:auto;font-size:13px">Authors</h2>
+        <h2 style="text-align:center;margin:auto;font-size:13px">Nguyen Truong Vinh Thuyen</h2>
+        <h2 style="text-align:center;margin:auto;font-size:13px">Tran Duc Huy</h2>
+        <h2 style="text-align:center;margin:auto;font-size:13px">Dao Thi Phuong Thao</h2>
+    </footer>
+    
+</html> 
