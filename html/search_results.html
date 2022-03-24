@@ -17,7 +17,7 @@
         <h4>  Query time: {{result['query_time']}} </h4>
         <div style="text-align:center;">
 	    
-            {% for key, value in result.items() %}
+            {% for key, value in result['results'].items() %}
             <h3> {{value['video']}} </h3>
             <h3> Time: From {{value['stime']}} to {{value['etime']}} </h3>
             <img src="data:image/jpg;base64, {{value['thumbnail']}}" alt="Red dot" />
